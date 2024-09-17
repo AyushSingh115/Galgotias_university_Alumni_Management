@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.navbar .logo img {
+  width: 50px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.nav-links .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.hero .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Features section styles */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+}
+
+.feature-box {
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature-box img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.feature-box p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .features {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-box {
+      margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+}

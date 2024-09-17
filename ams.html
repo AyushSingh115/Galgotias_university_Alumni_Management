@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Management Platform</title>
+    <link rel="stylesheet" href="./ams.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register Alumni</a></li>
+                <li><a href="#directory">Alumni Directory</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>University Alumni Management Platform</h1>
+        <p>Connecting Alumni Across the Globe</p>
+    </header>
+
+    <main>
+        <section id="register" class="form-section">
+            <h2>Register as Alumni</h2>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Graduation Year:</label>
+                    <input type="number" id="year" name="year" placeholder="Year of Graduation" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="degree">Degree:</label>
+                    <input type="text" id="degree" name="degree" placeholder="Degree Completed" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="profession">Current Profession:</label>
+                    <input type="text" id="profession" name="profession" placeholder="Your Current Profession" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="directory" class="directory-section">
+            <h2>Alumni Directory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Graduation Year</th>
+                        <th>Degree</th>
+                        <th>Profession</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be inserted here -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>2015</td>
+                        <td>B.Tech in CSE</td>
+                        <td>Software Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>2016</td>
+                        <td>MBA</td>
+                        <td>Marketing Manager</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact Us: alumni@university.com</p>
+        <p>&copy; 2024 University Alumni Management Platform</p>
+    </footer>
+</body>
+</html>

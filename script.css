@@ -1,0 +1,70 @@
+/* Style for the booking form */
+#bookingForm {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #6ff7f5;
+}
+.Event{
+  display: flex;
+  justify-content: center;
+  color: rgb(252, 250, 250);
+  background-color: #0b0b0c;
+}
+.form{
+  color: rgb(249, 86, 58);
+}
+.back{
+  background-color: #fa7676;
+}
+
+#bookingForm input,
+#bookingForm select,
+#bookingForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#bookingForm label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#bookingForm button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#bookingForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the response message */
+#response {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Success message styling */
+#response.success {
+  color: #28a745;
+}
+
+/* Error message styling */
+#response.error {
+  color: #dc3545;
+}

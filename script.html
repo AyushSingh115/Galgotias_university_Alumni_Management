@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Booking</title>
+    <link rel="stylesheet" href="./script.css">
+</head>
+<body>
+    <div class="back"> 
+    <h1 class="Event">Book an Event with Your Alumni</h1>
+ 
+    <form id="bookingForm">
+        <div class="form"><!--i add this in code--> 
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="event">Event Type:</label><br>
+        <select id="event" name="event" required>
+            <option value="Reunion">Reunion</option>
+            <option value="Networking">Networking</option>
+            <option value="Workshop">Workshop</option>
+        </select><br>
+
+        <label for="date">Preferred Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="message">Additional Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+
+        <button type="submit">Book Now</button>
+    </div>
+    </form>
+ 
+
+    <div id="response"></div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
